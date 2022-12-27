@@ -1,7 +1,7 @@
 # devops-fully-automated-infra
 Fully automated and secured Terraform infra pipeline
 
-Testing teh webhook.....
+Testing the webhook.....
 
 ## CICD Infra setup
 1) ###### GitHub setup
@@ -21,7 +21,7 @@ Testing teh webhook.....
     - Launch Instance
     - After launching this Jenkins server, attach a tag as **Key=Application, value=jenkins**
 
-3) ###### Slack 
+3) ###### Slack
     - **Join the slack channel https://join.slack.com/t/slack-wcl4742/shared_invite/zt-1kid01o3n-W47OUTHBd2ZZpSzGnow1Wg**
     - **Join into the channel "#team-devops"**
 
@@ -32,8 +32,8 @@ Testing teh webhook.....
     - Copy the Path from the Jenkins UI to get the Administrator Password
         - Run: `sudo cat /var/lib/jenkins/secrets/initialAdminPassword`
         - Copy the password and login to Jenkins
-    - Plugins: Choose Install Suggested Plugings 
-    - Provide 
+    - Plugins: Choose Install Suggested Plugings
+    - Provide
         - Username: **admin**
         - Password: **admin**
         - Name and Email can also be admin. You can use `admin` all, as its a poc.
@@ -82,7 +82,7 @@ Testing teh webhook.....
 
 1) #### Add jenkins webhook to github
     - Access your repo **devops-fully-automated-infra** on github
-    - Goto Settings --> Webhooks --> Click on Add webhook 
+    - Goto Settings --> Webhooks --> Click on Add webhook
     - Payload URL: **htpp://REPLACE-JENKINS-SERVER-PUBLIC-IP:8080/github-webhook/**             (Note: The IP should be public as GitHub is outside of the AWS VPC where Jenkins server is hosted)
     - Click on Add webhook
 
@@ -107,5 +107,5 @@ Once both the above steps are done click on Save.
 
 2) #### Skipping all the checks on the Jenkins file comment the checkov scan lines accordingly with # (sure to shell)
 
-## Finally observe the whole flow and understand the integrations :) 
+## Finally observe the whole flow and understand the integrations :)
 # Happy learning, everyone 😊 😊
